@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Images List</title>
+    </head>
+    <body>
+        <div>
+    <h1>Images List</h1>
+</div>
+
+{% for image in images %}
+    <div>
+        <h2>{{ image.title }}</h2>
+        <p>published: {{ image.description }}</p>
+        <p>{{ image.image}}</p>
+    </div>
+{% endfor %}
+    </body>
+</html>
