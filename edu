@@ -1,0 +1,17 @@
+import csv 
+import json
+
+with open('k.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+
+    header = True
+    O = [] 
+    for row in readCSV:
+        if header != True:
+            #print row
+            O.append( row ) 
+        else:
+            header = False
+
+
+    print json.dumps( O, separators=(',',':'))
