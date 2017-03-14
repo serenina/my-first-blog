@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.db import models
 import csv 
-ipport json
+import json
 
 class Image(models.Model):
     title = models.TextField()
